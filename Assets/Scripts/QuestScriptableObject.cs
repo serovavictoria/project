@@ -7,7 +7,7 @@ namespace Scripts
     internal class QuestScriptableObject : ScriptableObject
     {
         [SerializeField]
-        private String name;
+        private new String name;
 
         [SerializeField]
         private String description;

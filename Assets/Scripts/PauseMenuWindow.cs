@@ -25,7 +25,7 @@ public class PauseMenuWindow : AbstractWindowsUI
         isPaused = false;   
         CloseWindows();
         Time.timeScale = 1f;
-        player.enabled = true;  
+        player.enabled = true;
     }
 
     public override void OpenWindows()

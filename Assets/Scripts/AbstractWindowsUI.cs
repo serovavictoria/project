@@ -2,12 +2,12 @@ using UnityEngine;
 
 public abstract class AbstractWindowsUI : MonoBehaviour
 {
-    public void CloseWindows()
+    public virtual void CloseWindows()
     {
         gameObject.SetActive(false);
     }
 
-    public void OpenWindows()
+    public virtual void OpenWindows()
     {
         gameObject.SetActive(true);
     }

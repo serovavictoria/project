@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Scripts
 {
     [CreateAssetMenu(fileName = "NewQuest", menuName = "ScriptableObjects/Quest", order = 1)]
-    internal class QuestScriptableObject : ScriptableObject
+    public class QuestScriptableObject : ScriptableObject
     {
         [SerializeField]
         private new String name;
@@ -20,5 +20,7 @@ namespace Scripts
 
         [SerializeField]
         private String rightAnswer;
+
+        public bool IsComplete { get; set; }
     }
 }

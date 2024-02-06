@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 6070702541042807474}
   - component: {fileID: 9211208236995323393}
   - component: {fileID: 5795800921490937341}
+  - component: {fileID: 3042199453899832378}
   m_Layer: 5
   m_Name: DialogPanel
   m_TagString: Untagged
@@ -414,6 +415,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3042199453899832378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304133330083771867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6515f1fabd3846342a4efd613eddbafb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcName: {fileID: 7328014309558995587}
+  dialogText: {fileID: 8626882224354642995}
+  nextDialogStringButton: {fileID: 7378446264669392744}
 --- !u!1 &5503603954598172034
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Next
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenuWindow : AbstractWindowsUI
+public class PauseMenuWindow : AbstractWindowUI
 {
     [SerializeField]
     private GameObject pauseMenuPanel;
@@ -15,7 +15,7 @@ public class PauseMenuWindow : AbstractWindowsUI
     public void Pause()
     {
         isPaused = true;
-        OpenWindows();
+        OpenWindow();
         Time.timeScale = 0f;
         player.enabled = false; 
     }
@@ -23,17 +23,17 @@ public class PauseMenuWindow : AbstractWindowsUI
     public void Resume()
     {
         isPaused = false;   
-        CloseWindows();
+        CloseWindow();
         Time.timeScale = 1f;
         player.enabled = true;
     }
 
-    public override void OpenWindows()
+    public override void OpenWindow()
     {
         pauseMenuPanel.SetActive(true);
     }
 
-    public override void CloseWindows()
+    public override void CloseWindow()
     {
         pauseMenuPanel.SetActive(false);
     }

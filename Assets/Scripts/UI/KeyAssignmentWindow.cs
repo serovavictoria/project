@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class KeyAssignmentWindow : AbstractWindowsUI
+    public class KeyAssignmentWindow : AbstractWindowUI
     {
         
     }

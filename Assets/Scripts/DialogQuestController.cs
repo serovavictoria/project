@@ -24,6 +24,8 @@ namespace Assets.Scripts
 
         public void Load(DialogSciptableObject dialog, QuestScriptableObject quest)
         {
+            if (quest != null && quest.IsComplete) { return; }
+
             dialogWindow.LoadDialog(dialog);
             questWindow.LoadQuest(quest);
 

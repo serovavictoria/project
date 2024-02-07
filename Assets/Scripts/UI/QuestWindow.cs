@@ -11,17 +11,37 @@ namespace Assets.Scripts.UI
         [SerializeField]
         private Image questImage;
 
+        [Space]
+
         [SerializeField]
         private ClueWindow clueWindow;
+
+        [SerializeField]
+        private СonfirmationWindow confirmationWindow;
+
+        [Space]
 
         [SerializeField]
         private Button sendingAnswerButton;
 
         [SerializeField]
+        private Button clueButton;
+
+        [Space]
+
+        [SerializeField]
         private TMP_InputField inputField;
+
+        [Space]
+
+        [SerializeField]
+        private AssessmentController assessmentController;
 
 
         private QuestScriptableObject quest;
+
+        private float assessment = 1;
+
 
         public bool HasQuest { get { return quest != null; } }
 
@@ -32,6 +52,18 @@ namespace Assets.Scripts.UI
         private void Start()
         {
             sendingAnswerButton.onClick.AddListener(OnSendAnswer.Invoke);
+
+            clueButton.onClick.AddListener(() =>
+            {
+                if (clueWindow.isOpenedClue)
+                {
+                    clueWindow.OpenWindow();
+                }
+                else
+                {
+                    confirmationWindow.OpenWindow();
+                }
+            });
         }
 
         public override void OpenWindow()
@@ -41,13 +73,26 @@ namespace Assets.Scripts.UI
             clueWindow.LoadClueImage(quest.Clue);
         }
 
+        public void OpenClueWindow()
+        {
+            clueWindow.isOpenedClue = true;
+            assessment = 0.5f;
+        }
+
         public void CheckAnswer()
         {
             if (inputField.text == quest.RightAnswer)
             {
                 quest.IsComplete = true;
                 inputField.text = "";
-                //TODO: добавить увеличение оценки
+
+                PlayerPrefs.SetFloat("assessment", PlayerPrefs.GetFloat("assessment") + assessment);
+                assessmentController.UpdateAssessment();
+
+                clueWindow.isOpenedClue = false;
+                assessment = 1;
+
+
                 CloseWindow();
             }
         }

@@ -9,9 +9,17 @@ namespace Assets.Scripts.UI
         [SerializeField]
         private Image clueImage;
 
+        public bool isOpenedClue = false;
+
         public void LoadClueImage(Sprite sprite)
         {
             clueImage.sprite = sprite;
+        }
+
+        public override void OpenWindow()
+        {
+            base.OpenWindow();
+            isOpenedClue=true;
         }
     }
 }

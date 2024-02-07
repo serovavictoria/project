@@ -302,6 +302,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2387739252792090604}
+        m_TargetAssemblyTypeName: Assets.Scripts.UI.QuestWindow, Assembly-CSharp
+        m_MethodName: OpenClueWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &671313887953943130
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,19 +569,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3135617467465089036}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 89810551657065550}
-        m_TargetAssemblyTypeName: AbstractWindowUI, Assembly-CSharp
-        m_MethodName: OpenWindow
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1787343021704043589
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,8 +803,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questImage: {fileID: 2248506409565662228}
   clueWindow: {fileID: 1216498710352992780}
+  confirmationWindow: {fileID: 89810551657065550}
   sendingAnswerButton: {fileID: 5359118349651648503}
+  clueButton: {fileID: 3882495125414094010}
   inputField: {fileID: 770033347673636185}
+  assessmentController: {fileID: 0}
 --- !u!1 &1985459231566118539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueImage: {fileID: 7078093684730523246}
+  isOpenedClue: 0
 --- !u!1 &3508221487794176328
 GameObject:
   m_ObjectHideFlags: 0

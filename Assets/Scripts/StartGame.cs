@@ -6,6 +6,6 @@ public class StartGame : MonoBehaviour
 {
     public void Start()
     {
-        PlayerPrefs.SetFloat("assessment", 2.5f);
+        PlayerPrefs.SetFloat("assessment", 0);
     }
 }

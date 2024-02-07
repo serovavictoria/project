@@ -19,5 +19,10 @@ namespace Scripts
         public String RightAnswer { get { return rightAnswer; } }
 
         public bool IsComplete { get; set; }
+
+        private void OnEnable()
+        {
+            IsComplete = false;
+        }
     }
 }

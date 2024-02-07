@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc8faa4cc685c748a6aa206fd4de2c5, type: 3}
   m_Name: BackerDialog
   m_EditorClassIdentifier: 
-  npcName: "\u041F\u0435\u043A\u0430\u0440\u044C"
   dialogStrings:
-  - qwerty
-  lastLoopDialogString: zxc
-  dialogIndex: -1
+  - NpcName: "\u041F\u0440\u043E\u0434\u0430\u0432\u0435\u0446"
+    Message: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!
+      \u0427\u0435\u0433\u043E \u0436\u0435\u043B\u0430\u0435\u0442\u0435?"
+  - NpcName: "\u0418\u0433\u0440\u043E\u043A"
+    Message: "\u041C\u043E\u0436\u043D\u043E \u043E\u0434\u043D\u0443 \u0431\u0443\u043B\u043E\u0447\u043A\u0443,
+      \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430!"

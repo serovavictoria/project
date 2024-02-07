@@ -33,13 +33,13 @@ public class DialogWindow : AbstractWindowUI
     public override void OpenWindow()
     {
         base.OpenWindow();
-        if (dialogText != null) { dialogText.text = dialog.GetDialogString(); }
-        if (npcName != null) { npcName.text = dialog.NpcName; }
+        GetNextDialogString();
     }
 
     public void GetNextDialogString()
     {
-        if (dialogText != null) { dialogText.text = dialog.GetDialogString(); }
+        if (dialogText != null) { dialogText.text = dialog.GetDialogString().Message; }
+        if (npcName != null) { npcName.text = dialog.GetDialogString().NpcName; }
     }
 
     public void LoadDialog(DialogSciptableObject obj)

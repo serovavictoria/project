@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126c9e9c9406f3d49a9ecf6aa816171b, type: 3}
+  m_Name: MamaQuest
+  m_EditorClassIdentifier: 
+  imageDescription: {fileID: 21300000, guid: ec3993851ae6c4f49bd0e949891a6df2, type: 3}
+  clue: {fileID: 21300000, guid: 5868205c2ffc4f54d989c20436b5b34e, type: 3}
+  rightAnswer: 5

@@ -38,8 +38,10 @@ public class DialogWindow : AbstractWindowUI
 
     public void GetNextDialogString()
     {
-        if (dialogText != null) { dialogText.text = dialog.GetDialogString().Message; }
-        if (npcName != null) { npcName.text = dialog.GetDialogString().NpcName; }
+        DialogString dialogString = dialog.GetDialogString();
+
+        if (dialogText != null) { dialogText.text = dialogString.Message; }
+        if (npcName != null) { npcName.text = dialogString.NpcName; }
     }
 
     public void LoadDialog(DialogSciptableObject obj)

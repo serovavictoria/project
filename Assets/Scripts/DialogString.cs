@@ -8,4 +8,5 @@ public class DialogString
 {
     public string NpcName;
     public string Message;
+    public bool isLastMessage;
 }

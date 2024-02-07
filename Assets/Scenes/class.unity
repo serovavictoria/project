@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f1eb1fd2a7c1c454abd60d9fc7f4bcd2, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 1fb64eca7cee6fb4282fba659fc07742, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -9130,6 +9130,10 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 11400000, guid: 8c5f90ac1a5d0d444b9481118fd3a4b8, type: 2}
+    - target: {fileID: 3487168618906737994, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 3487168618906737995, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -9176,7 +9180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3487168618906737999, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}
       propertyPath: m_Name
-      value: Character
+      value: Teacher
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}

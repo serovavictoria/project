@@ -18,11 +18,9 @@ public class DialogSciptableObject : ScriptableObject
     {
         dialogIndex++;
 
-        if (dialogIndex + 1 >= dialogStrings.Length)
-        {
-            isDialogOver = true;
-            dialogIndex = dialogStrings.Length - 1;
-        }
+        isDialogOver = dialogIndex + 1 >= dialogStrings.Length || dialogStrings[dialogIndex + 1].isLastMessage;
+        if (dialogIndex >= dialogStrings.Length) dialogIndex = dialogStrings.Length - 1;
+
 
         return dialogStrings[dialogIndex];
     }

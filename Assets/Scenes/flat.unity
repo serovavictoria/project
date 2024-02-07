@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: fe650879efa6d2e47918c92e0a1809a2, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2415,6 +2415,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3487168618906737988, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 4ad21fce612ffb74d838a75ab5614dbc, type: 2}
     - target: {fileID: 3487168618906737988, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}
       propertyPath: dialog
       value: 

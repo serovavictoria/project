@@ -26,9 +26,8 @@ public class DialogWindow : AbstractWindowUI
 
     private void Start()
     {
-        nextDialogStringButton.onClick.AddListener(OnGetNextDialogString.Invoke);
-
         OnGetNextDialogString += GetNextDialogString;
+        nextDialogStringButton.onClick.AddListener(OnGetNextDialogString.Invoke);
     }
 
 

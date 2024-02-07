@@ -29,6 +29,9 @@ public class DialogSciptableObject : ScriptableObject
         }
 
         dialogIndex++;
+
+        if (dialogIndex + 1 >= dialogStrings.Length) isDialogOver = true;
+
         return dialogStrings[dialogIndex];
     }
 

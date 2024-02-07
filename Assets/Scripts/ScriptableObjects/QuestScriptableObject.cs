@@ -7,19 +7,16 @@ namespace Scripts
     public class QuestScriptableObject : ScriptableObject
     {
         [SerializeField]
-        private new String name;
-
-        [SerializeField]
-        private String description;
-
-        [SerializeField]
         private Sprite imageDescription;
+        public Sprite ImageDescription { get { return imageDescription; } }
 
         [SerializeField]
-        private String questGiver;
+        private Sprite clue;
+        public Sprite Clue { get {  return clue; } }
 
         [SerializeField]
         private String rightAnswer;
+        public String RightAnswer { get { return rightAnswer; } }
 
         public bool IsComplete { get; set; }
     }

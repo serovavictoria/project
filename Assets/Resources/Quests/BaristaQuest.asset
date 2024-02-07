@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126c9e9c9406f3d49a9ecf6aa816171b, type: 3}
+  m_Name: BaristaQuest
+  m_EditorClassIdentifier: 
+  imageDescription: {fileID: 21300000, guid: 548709908d31ef249822a5e2c5b61522, type: 3}
+  clue: {fileID: 21300000, guid: 462921f3add607644bf8e00e07bf179b, type: 3}
+  rightAnswer: -2.5

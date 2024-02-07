@@ -123,8 +123,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3573022627176926317}
-        m_TargetAssemblyTypeName: AbstractWindowsUI, Assembly-CSharp
-        m_MethodName: CloseWindows
+        m_TargetAssemblyTypeName: AbstractWindowUI, Assembly-CSharp
+        m_MethodName: CloseWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

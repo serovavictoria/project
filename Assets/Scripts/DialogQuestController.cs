@@ -14,7 +14,7 @@ namespace Assets.Scripts
 
         private Player player;
 
-        private void Start()
+        private void Awake()
         {
             player = GameObject.FindAnyObjectByType<Player>();
 

@@ -6708,7 +6708,7 @@ PrefabInstance:
     - target: {fileID: 3487168618906737988, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}
       propertyPath: quest
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f97aac8f0194b4f43a8fd16206fe326a, type: 2}
     - target: {fileID: 3487168618906737988, guid: 9b1d96ca8ae408e499fc09d434a246b2, type: 3}
       propertyPath: dialog
       value: 

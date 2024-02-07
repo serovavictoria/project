@@ -30,11 +30,11 @@ public class DialogWindow : AbstractWindowUI
         nextDialogStringButton.onClick.AddListener(OnGetNextDialogString.Invoke);
     }
 
-
     public override void OpenWindow()
     {
         base.OpenWindow();
         if (dialogText != null) { dialogText.text = dialog.GetDialogString(); }
+        if (npcName != null) { npcName.text = dialog.NpcName; }
     }
 
     public void GetNextDialogString()

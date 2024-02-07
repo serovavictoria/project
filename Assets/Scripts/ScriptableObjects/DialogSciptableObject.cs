@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewDialog", menuName = "ScriptableObjects/Dialog", order = 1)]
@@ -5,6 +6,7 @@ public class DialogSciptableObject : ScriptableObject
 {
     [SerializeField]
     private string npcName;
+    public String NpcName { get { return npcName; } }
 
     [SerializeField]
     private string[] dialogStrings;

@@ -7,7 +7,8 @@ public class ToSchool : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
-       SceneManager.LoadScene(0);
+        if (PlayerPrefs.GetFloat("assessment") < 2.5) return;
 
+        SceneManager.LoadScene(0);
     }
 }

@@ -7,7 +7,9 @@ public class ToFlat : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
-       SceneManager.LoadScene(2);
+        if (PlayerPrefs.GetFloat("assessment") < 3.5) return;
+
+        SceneManager.LoadScene(2);
 
     }
 }

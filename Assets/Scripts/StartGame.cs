@@ -12,6 +12,6 @@ public class StartGame : MonoBehaviour
     {
         Debug.Log(DateTime.Now);
         StartGameTime.ticks = DateTime.Now.Ticks;
-        PlayerPrefs.SetFloat("assessment", 4);
+        PlayerPrefs.SetFloat("assessment", 0);
     }
 }

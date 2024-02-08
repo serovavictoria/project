@@ -21,7 +21,7 @@ public class EndGameWindow : AbstractWindowUI
 
         TimeSpan time = DateTime.Now - new DateTime(startGameTimeSciptableObject.ticks);
 
-        timeText.text = "Время прохождения игры: " + Convert.ToString(time.Minutes) + ":" + Convert.ToString(time.Seconds);
+        timeText.text = "Время прохождения игры: " + time.ToString(@"mm\:ss");
 
         Debug.Log(DateTime.Now);
     }

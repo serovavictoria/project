@@ -9,7 +9,7 @@ public class ToFlat : MonoBehaviour
     {
         if (PlayerPrefs.GetFloat("assessment") < 3.5) return;
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
 
     }
 }

@@ -19,4 +19,8 @@ MonoBehaviour:
   imageDescription: {fileID: 21300000, guid: 0880a8a4efedbaf4c87b539665cf2811, type: 3}
   clue: {fileID: 21300000, guid: 1123e78aa691f1d46af5bebd443b22e8, type: 3}
   rightAnswer: 18
+  defaultAnswer: 18
   requiredCompletedQuests: []
+  nameImageQuestDescription: 3.png
+  nameImageQuestClue: "3_\u041F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0430.png"
+  nameStringRightAnswer: 3.txt

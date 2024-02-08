@@ -9,6 +9,6 @@ public class ToSchool : MonoBehaviour
     {
         if (PlayerPrefs.GetFloat("assessment") < 2.5) return;
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

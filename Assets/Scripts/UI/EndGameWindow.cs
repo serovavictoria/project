@@ -16,12 +16,11 @@ public class EndGameWindow : AbstractWindowUI
     public override void OpenWindow()
     {
         base.OpenWindow();
+        TimeManager.instance.EndTime();
 
         assessmentText.text = "Ваша оценка: " + Math.Round(PlayerPrefs.GetFloat("assessment")).ToString();
 
-        TimeSpan time = DateTime.Now - new DateTime(startGameTimeSciptableObject.ticks);
-
-        timeText.text = "Время прохождения игры: " + time.ToString(@"mm\:ss");
+        timeText.text = "Время прохождения игры: " + TimeManager.instance.GetTotalTimePlayed();
 
         Debug.Log(DateTime.Now);
     }

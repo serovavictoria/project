@@ -7,4 +7,9 @@ using UnityEngine;
 public class StartGameTimeSciptableObject : ScriptableObject
 {
     public long ticks;
+
+    private void OnEnable()
+    {
+        ticks = 0;
+    }
 }

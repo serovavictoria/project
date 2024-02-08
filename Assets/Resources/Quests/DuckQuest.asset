@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 126c9e9c9406f3d49a9ecf6aa816171b, type: 3}
   m_Name: DuckQuest
   m_EditorClassIdentifier: 
+  questDesc: "\u0414\u043B\u044F \u0442\u043E\u0433\u043E, \u0447\u0442\u043E\u0431\u044B
+    \u043F\u043E\u043A\u043E\u0440\u043C\u0438\u0442\u044C \u0443\u0442\u043E\u0447\u0435\u043A,
+    \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C
+    \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0435:"
   imageDescription: {fileID: 21300000, guid: d49d3848d8d6d544f8170c02a6f67494, type: 3}
   clue: {fileID: 21300000, guid: d4674fba0cc9e8243901a72e1b8a88a7, type: 3}
   rightAnswer: -3

@@ -715,9 +715,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861911474}
-        m_TargetAssemblyTypeName: Assets.Scripts.SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 1179131084}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+        m_MethodName: StartNewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -727,9 +727,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1179131084}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: Start
+      - m_Target: {fileID: 861911474}
+        m_TargetAssemblyTypeName: Assets.Scripts.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1061,6 +1061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbdd22563ed8df94b8b989f3e4cf0535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartGameTime: {fileID: 11400000, guid: 6681512c999803342b55e6b14034c37d, type: 2}
 --- !u!224 &1404069038 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 165015099503547089, guid: aac83700df52c574a9105df2af966f82, type: 3}

@@ -11,6 +11,9 @@ namespace Assets.Scripts.UI
         [SerializeField]
         private Image questImage;
 
+        [SerializeField]
+        private TMP_Text questDesc;
+
         [Space]
 
         [SerializeField]
@@ -18,6 +21,9 @@ namespace Assets.Scripts.UI
 
         [SerializeField]
         private СonfirmationWindow confirmationWindow;
+
+        [SerializeField] 
+        private ErrorWindow errorWindow;
 
         [Space]
 
@@ -71,6 +77,7 @@ namespace Assets.Scripts.UI
             base.OpenWindow();
             questImage.sprite = quest.ImageDescription;
             clueWindow.LoadClueImage(quest.Clue);
+            questDesc.text = quest.QuestDesc;
         }
 
         public void OpenClueWindow()
@@ -94,6 +101,10 @@ namespace Assets.Scripts.UI
 
 
                 CloseWindow();
+            }
+            else
+            {
+                errorWindow.OpenWindow();
             }
         }
 

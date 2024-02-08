@@ -7,6 +7,8 @@ public class PauseMenuWindow : AbstractWindowUI
     [SerializeField]
     private GameObject pauseMenuPanel;
 
+    [SerializeField] private AssessmentController assessmentController;
+
     [SerializeField]
     private Player player;
 
@@ -17,7 +19,9 @@ public class PauseMenuWindow : AbstractWindowUI
         isPaused = true;
         OpenWindow();
         Time.timeScale = 0f;
-        player.enabled = false; 
+        player.enabled = false;
+
+        assessmentController.gameObject.SetActive(false);
     }
 
     public void Resume()
@@ -26,6 +30,8 @@ public class PauseMenuWindow : AbstractWindowUI
         CloseWindow();
         Time.timeScale = 1f;
         player.enabled = true;
+
+        assessmentController.gameObject.SetActive(true);
     }
 
     public override void OpenWindow()

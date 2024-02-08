@@ -8,6 +8,10 @@ namespace Scripts
     public class QuestScriptableObject : ScriptableObject
     {
         [SerializeField]
+        private String questDesc;
+        public String QuestDesc { get { return questDesc; } }
+
+        [SerializeField]
         private Sprite imageDescription;
         public Sprite ImageDescription { get { return imageDescription; } }
 

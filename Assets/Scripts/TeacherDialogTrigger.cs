@@ -1,18 +1,13 @@
 using Assets.Scripts;
-using Scripts;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using System;
 
-public class DialogTriggerEnter : MonoBehaviour
+public class TeacherDialogTrigger : MonoBehaviour
 {
     [SerializeField]
     private DialogSciptableObject dialog;
 
     [SerializeField]
-    private QuestScriptableObject quest;
+    private EndGameWindow endGameWindow;
 
     private DialogQuestController dialogQuestController;
 
@@ -23,7 +18,16 @@ public class DialogTriggerEnter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        dialogQuestController.Load(dialog, quest);
+        if (PlayerPrefs.GetFloat("assessment") < 2.5)
+        {
+            dialogQuestController.Load(dialog, null);
+        }
+        else
+        {
+            endGameWindow.OpenWindow();
+        }
         
+
     }
+
 }
